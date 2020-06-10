@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 Ro'yhatdan O'tish
+    form(method="POST", action="/register")
+        .form-group
+            label Ism:
+            input.form-control(name='name', type='text')
+        .form-group
+            label Parol:
+            input.form-control(name='password', type='password')
+        br
+        input.btn.btn-success(type='submit', value='Tizimga Kirish')
